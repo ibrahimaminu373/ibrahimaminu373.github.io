@@ -54,6 +54,10 @@
     background:var(--surface); border:1px solid var(--border);
     border-radius:8px; padding:1.5rem 1.75rem;
   }
+  .card img{
+    width:100%; border-radius:6px; border:1px solid var(--border);
+    margin-bottom:1.1rem; display:block;
+  }
   .card h3{font-size:1.15rem; margin-bottom:0.5rem;}
   .card p{color:var(--muted); font-size:0.95rem; margin-bottom:1rem;}
   .card-tags{display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.1rem;}
@@ -85,6 +89,11 @@
 <body>
   <div class="wrap">
 
+    <div style="margin-bottom:2rem; font-size:0.85rem;">
+      <a href="index.html" style="color:var(--accent); text-decoration:none; font-weight:600;">Data &amp; SQL</a>
+      <span style="color:var(--muted); margin:0 0.5rem;">/</span>
+      <a href="customer-service.html" style="color:var(--muted); text-decoration:none;">Customer Service</a>
+    </div>
     <div class="eyebrow">Portfolio</div>
     <h1>Aminu Ibrahim</h1>
     <div class="role">Data Analyst · Aspiring Data Scientist · Machine Learning</div>
@@ -186,6 +195,34 @@
           <span class="tag">SQL</span>
           <span class="tag">Power BI</span>
           <span class="tag">Dashboards</span>
+        </div>
+        <span style="color:var(--muted); font-size:0.9rem;">Repository coming soon</span>
+      </div>
+
+      <div class="card" style="margin-top:1.25rem;">
+        <img src="images/dashboard-sales.png" alt="Sales dashboard screenshot">
+        <h3>New Dashboard Project 1</h3>
+        <p>
+          Replace this with a short description of the dashboard — what data
+          it covers, what questions it answers, and what the viewer should
+          notice first.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Power BI</span>
+        </div>
+        <span style="color:var(--muted); font-size:0.9rem;">Repository coming soon</span>
+      </div>
+
+      <div class="card" style="margin-top:1.25rem;">
+        <img src="images/dashboard-2.png" alt="Second dashboard screenshot">
+        <h3>New Dashboard Project 2</h3>
+        <p>
+          Replace this with a short description of the dashboard — what data
+          it covers, what questions it answers, and what the viewer should
+          notice first.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Power BI</span>
         </div>
         <span style="color:var(--muted); font-size:0.9rem;">Repository coming soon</span>
       </div>
