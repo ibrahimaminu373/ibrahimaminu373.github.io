@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aminu Ibrahim — Portfolio</title>
+<style>
+  :root{
+    --bg:#12161C; --surface:#1A1F27; --border:#262D38;
+    --text:#E7EAEE; --muted:#8B94A3; --accent:#5FD4C4;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:5rem 1.5rem 4rem;}
+  .eyebrow{color:var(--accent); font-size:0.95rem; margin-bottom:0.75rem;}
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:2.6rem; font-weight:600; letter-spacing:-0.01em;
+    margin-bottom:0.5rem;
+  }
+  .role{color:var(--muted); font-size:1.15rem; margin-bottom:1.75rem;}
+  .intro{max-width:56ch; color:#C7CDD7; margin-bottom:2.5rem;}
+  .links{display:flex; gap:1.25rem; margin-bottom:4rem; flex-wrap:wrap;}
+  .links a{
+    color:var(--text); text-decoration:none; font-size:0.95rem;
+    border-bottom:1px solid var(--border); padding-bottom:2px;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  .links a:hover{border-color:var(--accent); color:var(--accent);}
+
+  section{margin-bottom:3.5rem;}
+  h2{
+    font-size:0.85rem; text-transform:none; color:var(--muted);
+    font-weight:600; margin-bottom:1.25rem; letter-spacing:0.02em;
+  }
+
+  .skill-group{margin-bottom:1.5rem;}
+  .skill-group:last-child{margin-bottom:0;}
+  .skill-group-label{
+    font-size:0.78rem; color:var(--muted); text-transform:uppercase;
+    letter-spacing:0.06em; margin-bottom:0.6rem;
+  }
+  .skills{display:flex; flex-wrap:wrap; gap:0.6rem;}
+  .skill{
+    border:1px solid var(--border); color:#C7CDD7;
+    padding:0.4rem 0.85rem; border-radius:5px; font-size:0.9rem;
+  }
+
+  .card{
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:8px; padding:1.5rem 1.75rem;
+  }
+  .card h3{font-size:1.15rem; margin-bottom:0.5rem;}
+  .card p{color:var(--muted); font-size:0.95rem; margin-bottom:1rem;}
+  .card-tags{display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.1rem;}
+  .tag{font-size:0.78rem; color:var(--accent); border:1px solid #2C4A46; padding:0.2rem 0.6rem; border-radius:4px;}
+  .card a.repo-link{
+    color:var(--accent); text-decoration:none; font-size:0.9rem; font-weight:600;
+  }
+  .card a.repo-link:hover{text-decoration:underline;}
+
+  .learning{
+    border:1px dashed var(--border); border-radius:8px;
+    padding:1.25rem 1.75rem; color:var(--muted); font-size:0.95rem;
+  }
+  .learning strong{color:var(--text);}
+
+  footer{color:var(--muted); font-size:0.85rem; border-top:1px solid var(--border); padding-top:1.5rem;}
+
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#FAFAF8; --surface:#FFFFFF; --border:#E3E3DD;
+      --text:#1C1F24; --muted:#6B7280; --accent:#0F8F7D;
+    }
+    .intro{color:#3A3F47;}
+    .skill{color:#3A3F47;}
+    .tag{border-color:#BFE6DF;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="eyebrow">Portfolio</div>
+    <h1>Aminu Ibrahim</h1>
+    <div class="role">Data Analyst · Aspiring Data Scientist · Machine Learning</div>
+    <p class="intro">
+      Learning SQL and data analysis by working through real business questions
+      against a relational sales database — joins, subqueries, conditional
+      aggregation, and relational division. Currently expanding into data
+      science and machine learning fundamentals.
+    </p>
+
+    <div class="links">
+      <a href="https://github.com/ibrahimaminu373" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ibrahimaminu007/" target="_blank">LinkedIn</a>
+      <a href="mailto:ibrahimaminu373@gmail.com">Email</a>
+    </div>
+
+    <section>
+      <h2>Skills</h2>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Languages &amp; Databases</div>
+        <div class="skills">
+          <span class="skill">SQL (T-SQL)</span>
+          <span class="skill">SQL Server / SSMS</span>
+          <span class="skill">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Core Competencies</div>
+        <div class="skills">
+          <span class="skill">Joins &amp; Subqueries</span>
+          <span class="skill">Conditional Aggregation</span>
+          <span class="skill">Relational Database Design</span>
+          <span class="skill">Process Automation</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Tools</div>
+        <div class="skills">
+          <span class="skill">Git &amp; GitHub</span>
+          <span class="skill">Excel</span>
+          <span class="skill">Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">Currently Learning</div>
+        <div class="skills">
+          <span class="skill">Data Analysis</span>
+          <span class="skill">Machine Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>SQL Sales Database Project</h3>
+        <p>
+          A set of T-SQL queries solving real business questions against a
+          Northwind-style sales database — covering multi-table joins,
+          correlated subqueries, discount-tier logic with CASE expressions,
+          and relational division to find customers who've ordered every product.
+        </p>
+        <div class="card-tags">
+          <span class="tag">T-SQL</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">Joins</span>
+          <span class="tag">Subqueries</span>
+        </div>
+        <a class="repo-link" href="https://github.com/ibrahimaminu373/sql-project" target="_blank">View repository →</a>
+      </div>
+
+      <div class="card" style="margin-top:1.25rem;">
+        <h3>Hospital Management Database</h3>
+        <p>
+          A relational database schema for core hospital operations — patients,
+          doctors, departments, appointments, and medical records — with
+          enforced data-integrity constraints like double-booking prevention
+          and referential integrity across all tables.
+        </p>
+        <div class="card-tags">
+          <span class="tag">SQL Server</span>
+          <span class="tag">Schema Design</span>
+          <span class="tag">T-SQL</span>
+        </div>
+        <a class="repo-link" href="https://github.com/ibrahimaminu373/Hospital-Management-Database" target="_blank">View repository →</a>
+      </div>
+
+      <div class="card" style="margin-top:1.25rem;">
+        <h3>Sales Data Analysis — SQL &amp; Power BI</h3>
+        <p>
+          Analysis of sales data combining SQL queries for data extraction with
+          a Power BI dashboard for visualization and reporting.
+        </p>
+        <div class="card-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Dashboards</span>
+        </div>
+        <span style="color:var(--muted); font-size:0.9rem;">Repository coming soon</span>
+      </div>
+
+      <div class="card" style="margin-top:1.25rem;">
+        <h3>Hospital Data Analysis — Excel</h3>
+        <p>
+          Exploratory analysis of hospital data in Excel, covering data
+          cleaning, formulas, and summary reporting.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Excel</span>
+          <span class="tag">Data Cleaning</span>
+        </div>
+        <span style="color:var(--muted); font-size:0.9rem;">Repository coming soon</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Currently Learning</h2>
+      <div class="learning">
+        <strong>Data Science fundamentals</strong> — building on SQL skills to
+        move into data analysis and exploratory data work. Projects will be
+        added here as they're completed.
+      </div>
+    </section>
+
+    <footer>
+      Built and deployed with GitHub Pages.
+    </footer>
+
+  </div>
+</body>
+</html>
